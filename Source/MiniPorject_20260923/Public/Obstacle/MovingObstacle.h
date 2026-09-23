@@ -1,0 +1,17 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Obstacle/Obstacle.h"
+#include "MovingObstacle.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class MINIPORJECT_20260923_API AMovingObstacle : public AObstacle
+{
+	GENERATED_BODY()
+	
+};
