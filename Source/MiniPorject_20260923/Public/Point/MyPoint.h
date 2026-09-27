@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "../../GameInfo.h"
 #include "GameFramework/Actor.h"
 #include "MyPoint.generated.h"
 
@@ -23,4 +23,13 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+public:
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<UArrowComponent> SpawnPoint;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	TObjectPtr<class UMyWidgetComponent> pointWidgetComponent;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	TObjectPtr<class UpointWidget> pointWidget;
 };
